@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-luz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d portfolio-luz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luzmlx/portfolio-luz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://luzmlx.github.io/portfolio-luz",
+  "bugs": {
+    "url": "https://github.com/luzmlx/portfolio-luz/issues"
+  },
+  "homepage": "https://github.com/luzmlx/portfolio-luz#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
