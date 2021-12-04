@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>Luz Lopez Marcano</title>
 </head>
 
@@ -46,7 +47,8 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do...</h3>
-                            <p>I am a Software Engineer dedicated to providing quality, interactive websites for my clients and
+                            <p>I am a Software Engineer dedicated to providing quality, interactive websites for my
+                                clients and
                                 employers. </p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
@@ -62,36 +64,42 @@
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More about me</h4>
-                    <p>I like to build projects to test my skills and am currently learning how to implement gaming and 3D design(three.js) in my websites. </p>
+                    <p>I like to build projects to test my skills and am currently learning how to implement gaming and
+                        3D design(three.js) in my websites. </p>
                     <p>Apart from coding, I like to read books. Currently, I am reading The Song of Achilles.</p>
+
+
+                    <hr>
+
+                    <h4>Skills</h4>
+                    <p>Fullstack Developer with primary focus on React:
+                        <a target="_blank" href="Resume 2021_Luz.pdf">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>PSQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <ul>
+                            <li>Ruby</li>
+                            <li>Git/Github</li>
+                            <li>Wireframing</li>
+                            <li>NodeJS</li>
+                            <li>Heroku</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <hr>
-
-                <h4>Skills</h4>
-                <p>Fullstack Developer with primary focus on React: 
-                    <a target="_blank" href="Resume 2021_Luz.pdf">Download Resume</a>
-                </p>
-
-                <div id="skills">
-                    <ul>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>PSQL</li>
-                        <li>MongoDB</li>
-                    </ul>
-                    <ul>
-                        <li>Ruby</li>
-                        <li>Git/Github</li>
-                        <li>Wireframing</li>
-                        <li>NodeJS</li>
-                        <li>Heroku</li>
-                    </ul>
-                </div>
-
                 <div class="social-links">
-                
+                    <h3 class="follow-social-text">Follow My Socials</h3>
+
+                    <a target="_blank" href="https://github.com/luzmlx"><img class="logos"
+                            src="images/githublogo.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/luzlmarcano/"><img class="logos"
+                            src="images/linkedinlogo1.png"></a>
                 </div>
 
             </div>
@@ -100,15 +108,64 @@
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">My projects so far...</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/animequote.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Anime Quote Generator</h6>
+                            <p class="post-intro">A simple JavaScript based application using a third party API to generate anime quotes. You are able to search an anime character to generate 10 quotes from that character or press the button to generate a random quote.</p>
+                            <a target="_blank" href="https://luzmlx.github.io/anime-quote-generator/">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/todolist.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">To Do List</h6>
+                            <p class="post-intro">A responsive web application built with ReactJs and JSON. Utilizes full CRUD, allowing you to create, update, and delete tasks from your list.</p>
+                            <a target="_blank" href="https://festive-saha-46e005.netlify.app/">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/sweettreats.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Sweet Treats</h6>
+                            <p class="post-intro">Full-stack, full-CRUD web application, utilizing a RESTful JSON API with React on Rails stack. A bakery application that, once signed in, allows you to create a cake product with information and gives you the ability to edit any information within that product you made.</p>
+                            <a target="_blank" href="https://sweettreatss.netlify.app/">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Contact Me</h3>
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
-</body>
 
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
 </html>
